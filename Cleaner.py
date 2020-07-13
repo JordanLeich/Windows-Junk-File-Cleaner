@@ -1,17 +1,20 @@
-# Made by Jordan Leich on 6/14/2020
+# Made by Jordan Leich on 6/14/2020, Last updated on 7/13/2020 IMPORTANT NOTE TO READ*** This cleaner script will
+# work best if you are an administrator on your PC. Without being an administrator, the script will only partially
+# clean junk files and will eventually hit an error that will end the script.
 
 import os
 import shutil
 import time
 
 
+# End of the program when the cleaner finishes cleaning junk files
 def end():
-    print()
     print('Cleaning successful!\n')
-    time.sleep(2)
+    time.sleep(1)
     quit()
 
 
+# Second folder to clean (May require administrator)
 def second():
     folder = 'C:\Windows\Temp'
     time.sleep(2)
@@ -23,10 +26,11 @@ def second():
             elif os.path.isdir(file_path):
                 shutil.rmtree(file_path)
         except Exception as e:
-            print('Failed to delete %s. Reason: %s' % (file_path, e))
+            print('Failed to delete %s. Reason: %s' % (file_path, e), '\n')
             third()
 
 
+# Third folder to clean (Does require administrator)
 def third():
     folder = 'C:\Windows\Prefetch'
     time.sleep(2)
@@ -38,28 +42,31 @@ def third():
             elif os.path.isdir(file_path):
                 shutil.rmtree(file_path)
         except Exception as e:
-            print('Failed to delete %s. Reason: %s' % (file_path, e))
+            print('Failed to delete %s. Reason: %s' % (file_path, e), '\n')
+            time.sleep(1)
             end()
 
 
+# Opens a cleaning program that is pre-installed with windows (Doesn't require administrator)
 def first():
-    time.sleep(2)
     clean = os.popen('cleanmgr.exe /sagerun:1').read()
     print(clean)
     time.sleep(1)
     second()
 
 
+# Beginning of the program
 def start():
     user_choice = str(input("Would you like to clean junk files on your computer (yes or no): "))
-    print()
 
     if user_choice.lower() == 'yes' or user_choice.lower() == 'y':
         first()
 
     elif user_choice.lower() == 'no' or user_choice.lower() == 'n':
+        print()
         print("Ending cleaner...")
         time.sleep(2)
+        quit()
 
     else:
         print("Invalid input... Restart input...\n")
@@ -67,4 +74,5 @@ def start():
         start()
 
 
+# Starts the first section of the program
 start()
