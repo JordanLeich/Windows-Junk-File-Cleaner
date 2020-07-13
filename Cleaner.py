@@ -2,14 +2,21 @@
 # work best if you are an administrator on your PC. Without being an administrator, the script will only partially
 # clean junk files and will eventually hit an error that will end the script.
 
+# All imports used
 import os
 import shutil
 import time
+from colored import fg
+
+# Extra global Variables used
+good_color = fg('green')
+bad_color = fg('red')
+neutral = fg('blue')
 
 
 # End of the program when the cleaner finishes cleaning junk files
 def end():
-    print('Cleaning successful!\n')
+    print(good_color + 'Cleaning successful!\n')
     time.sleep(1)
     quit()
 
@@ -26,7 +33,7 @@ def second():
             elif os.path.isdir(file_path):
                 shutil.rmtree(file_path)
         except Exception as e:
-            print('Failed to delete %s. Reason: %s' % (file_path, e), '\n')
+            print(bad_color + 'Failed to delete %s. Reason: %s' % (file_path, e), '\n')
             third()
 
 
@@ -42,7 +49,7 @@ def third():
             elif os.path.isdir(file_path):
                 shutil.rmtree(file_path)
         except Exception as e:
-            print('Failed to delete %s. Reason: %s' % (file_path, e), '\n')
+            print(bad_color + 'Failed to delete %s. Reason: %s' % (file_path, e), '\n')
             time.sleep(1)
             end()
 
@@ -57,14 +64,14 @@ def first():
 
 # Beginning of the program
 def start():
-    user_choice = str(input("Would you like to clean junk files on your computer (yes or no): "))
+    user_choice = str(input(neutral + "Would you like to clean junk files on your computer (yes or no): "))
 
     if user_choice.lower() == 'yes' or user_choice.lower() == 'y':
         first()
 
     elif user_choice.lower() == 'no' or user_choice.lower() == 'n':
         print()
-        print("Ending cleaner...")
+        print(good_color + "Ending cleaner...")
         time.sleep(2)
         quit()
 
