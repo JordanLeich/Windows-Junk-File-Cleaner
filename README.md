@@ -1,6 +1,6 @@
 # REQUIREMENTS
-1. colored (you can install colored by using pip install colored)
-2. Windows Operating System 
+1. Windows operating system
+2. Colored (you can install colored by using pip install colored)
 
 # IMPORTANT NOTE
 - It is best to use and run this program or script as being an administrator since one to two of the junk folders will almost always contain administror controllered files and folders that need to be cleaned. Without being an administrator, the script will only partially clean junk files and will eventually hit an error that will end the script.
