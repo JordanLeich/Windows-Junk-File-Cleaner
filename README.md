@@ -1,6 +1,6 @@
 # REQUIREMENTS
 1. Windows operating system
-1. Colored (you can install colored by using pip install colored)
+1. Colored (you can install colored by using pip install colored) (only applys to those who are using python and not the .exe installer!)
 
 # IMPORTANT NOTES
 1. You do not need python installed to be able to use my program! If you choose not to use python or don't have it installed, you can download the .exe installer and use that instead!
