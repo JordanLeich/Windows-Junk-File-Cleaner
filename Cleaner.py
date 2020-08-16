@@ -1,4 +1,4 @@
-# Made by Jordan Leich on 6/14/2020, Last updated on 7/22/2020 IMPORTANT NOTE TO READ*** This cleaner script will
+# Made by Jordan Leich on 6/14/2020, Last updated on 8/15/2020 IMPORTANT NOTE TO READ*** This cleaner script will
 # work best if you are an administrator on your PC. Without being an administrator, the script will only partially
 # clean junk files and will eventually hit an error that will end the script.
 
@@ -14,20 +14,24 @@ red = fg('red')
 reset_color = attr('reset')
 
 
-# End of the program when the cleaner finishes cleaning junk files
 def end():
+    """
+    End of the program when the cleaner finishes cleaning junk files
+    """
     print(green + 'Cleaning Successful!\n', reset_color)
     ti.sleep(1)
     quit()
 
 
-# Second folder to clean (May require administrator)
 def second():
+    """
+    Second folder to clean (May require administrator)
+    """
     folder = 'C:\Windows\Temp'
     ti.sleep(1)
     list = os.listdir(folder)
     number_files = len(list)
-    print(red+'Junk files/folders found in the first folder: ', number_files, reset_color, '\n')
+    print(red + 'Junk files/folders found in the first folder: ', number_files, reset_color, '\n')
     ti.sleep(2)
 
     for filename in os.listdir(folder):
@@ -44,13 +48,15 @@ def second():
             third()
 
 
-# Third folder to clean (Does require administrator)
 def third():
+    """
+    Third folder to clean (Does require administrator)
+    """
     second_folder = 'C:\Windows\Prefetch'
     ti.sleep(1)
     list = os.listdir(second_folder)
     number_files = len(list)
-    print(red+'Junk files/folders found in the second folder: ', number_files, reset_color, '\n')
+    print(red + 'Junk files/folders found in the second folder: ', number_files, reset_color, '\n')
     ti.sleep(2)
 
     for filename in os.listdir(second_folder):
@@ -67,24 +73,31 @@ def third():
             end()
 
 
-# Opens a cleaning program that is pre-installed with windows (Doesn't require administrator)
 def first():
+    """
+    Opens a cleaning program that is pre-installed with windows (Doesn't require administrator)
+    """
     clean = os.popen('cleanmgr.exe /sagerun:1').read()
     print(clean)
     ti.sleep(1)
     second()
 
 
-# Basic Clean - Opens a cleaning program that is pre-installed with windows (Doesn't require administrator)
 def basic_clean():
+    """
+    Basic Clean - Opens a cleaning program that is pre-installed with windows (Doesn't require administrator)
+    """
     clean = os.popen('cleanmgr.exe /sagerun:1').read()
     print(clean)
     ti.sleep(1)
     end()
 
 
-# Beginning of the program
 def start():
+    """
+    This is the very start of the program, the user is asked for input to choose between a basic or advanced
+    cleaning, or they can choose to quit the program.
+    """
     try:
         user_choice2 = str(input('Basic clean, Advanced clean, or quit (basic, advanced, or quit): '))
         print()
@@ -113,5 +126,4 @@ def start():
         quit()
 
 
-# Starts the first section of the program
-start()
+start()  # Starts the first section of the program
