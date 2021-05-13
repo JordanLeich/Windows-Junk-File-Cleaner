@@ -1,8 +1,0 @@
-title: Junk-file-cleaner
-description: This is used as a python script that I use for my computer. This script is set to automatically run everyday at 1:30pm, once running the script will clean two junk folders and then open windows 10 disk cleanup program to cleaner other junk folders.
-google_analytics: 
-show_downloads: true
-theme: jekyll-theme-cayman
-
-gems:
-  - jekyll-mentions
