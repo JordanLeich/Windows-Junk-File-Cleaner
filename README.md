@@ -1,3 +1,13 @@
+<a style="text-decoration:none" href="https://github.com/JordanLeich/Junk-File-Cleaner/releases">
+    <img src="https://img.shields.io/github/release/JordanLeich/Junk-File-Cleaner.svg?style=flat-square" alt="Releases" />
+  </a>
+<a style="text-decoration:none" href="https://github.com/JordanLeich/Junk-File-Cleaner/contributors/">
+    <img src="https://img.shields.io/github/contributors/JordanLeich/Junk-File-Cleaner?style=flat-square" alt="Contributors" />
+  </a>
+  <a style="text-decoration:none" href="https://github.com/JordanLeich/Junk-File-Cleaner/stargazers">
+    <img src="https://img.shields.io/github/stars/JordanLeich/Junk-File-Cleaner.svg?style=flat-square" alt="Stars" />
+  </a>
+
 # Description :open_file_folder:
 - This is used as a python script that I use for my computer. This script is set to automatically run everyday at 1:30pm, once running the script will open a pre-installed cleaning program that is on every windows PC and then open two other junk folders inside of windows to clean up. You can also [visit](https://jordanleich.github.io/Junk-File-Cleaner/) my website for additional information.
 
