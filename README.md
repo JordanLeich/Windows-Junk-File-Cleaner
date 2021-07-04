@@ -11,7 +11,7 @@
 # Description :open_file_folder:
 - This is used as a python script that I use for my computer. This script is set to automatically run everyday at 1:30pm, once running the script will open a pre-installed cleaning program that is on every windows PC and then open two other junk folders inside of windows to clean up. You can also [visit](https://jordanleich.github.io/Junk-File-Cleaner/) my website for additional information.
 
-![Junk Folders](demos/demo.gif "Junk Folders")
+![Junk Folders](images/demo.gif "Junk Folders")
 
 # Important :zap:
 1. You do not need python installed to be able to use my program! If you choose not to use python or don't have it installed, you can download the .exe installer and use that instead!
