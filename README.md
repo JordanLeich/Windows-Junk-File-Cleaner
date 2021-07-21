@@ -9,8 +9,9 @@
   </a>
 
 # Description :open_file_folder:
-- This is used as a python script that I use for my computer. This script is set to automatically run everyday at 1:30pm, once running the script will open a pre-installed cleaning program that is on every windows PC and then open two other junk folders inside of windows to clean up. You can also [visit](https://jordanleich.github.io/Junk-File-Cleaner/) my website for additional information.
+- This is used as a python script that I use for my computer. This script can be set to automatically run every day at whatever time you would like or even when you start your computer and log on. Once the script is ran, it will open a pre-installed cleaning program that is on every Windows PC and then open two other junk folders inside of windows to clean up.
 
+# Demonstration
 ![Junk Folders](images/demo.gif "Junk Folders")
 
 # Important :zap:
@@ -18,7 +19,12 @@
 1. It is best to use and run this program or script as being an administrator since one to two of the junk folders will almost always contain administror controllered files and folders that need to be cleaned. Without being an administrator, the script will only partially clean junk files and will eventually hit an error that will end the script.
 
 # [Requirements](https://github.com/JordanLeich/Junk-File-Cleaner/blob/master/requirements.txt) :exclamation:
+### Option 1 (Python not installed)
 1. Windows operating system
-1. Colored (you can install colored by using pip install colored) (only applys to those who are using python and not the .exe installer!)
+1. Download the [exe file]() and run the file as administrator.
+
+### Option 2 (Python installed)
+1. Windows operating system
+1. Colored (you can install colored by using pip install colored) (only applies to those who are using python and not the .exe file!)
 
 ![Junk Folders](images/junk.jpg "Junk Folders")
