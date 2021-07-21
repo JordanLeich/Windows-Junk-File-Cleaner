@@ -15,13 +15,13 @@
 ![Junk Folders](images/demo.gif "Junk Folders")
 
 # Important :zap:
-1. You do not need python installed to be able to use my program! If you choose not to use python or don't have it installed, you can download the .exe installer and use that instead!
-1. It is best to use and run this program or script as being an administrator since one to two of the junk folders will almost always contain administror controllered files and folders that need to be cleaned. Without being an administrator, the script will only partially clean junk files and will eventually hit an error that will end the script.
+1. You do not need python installed to be able to use my program! If you choose not to use python or don't have it installed, you can download the [exe file](https://github.com/JordanLeich/Junk-File-Cleaner/blob/master/cleaner.exe) and use that instead!
+1. It is best to use and run this program or script as being an administrator since one to two of the junk folders will almost always contain administror controllered files and folders that needs to be cleaned. Without being an administrator, the script will only partially clean junk files and will eventually hit an administrator error that will end the script short.
 
 # [Requirements](https://github.com/JordanLeich/Junk-File-Cleaner/blob/master/requirements.txt) :exclamation:
 ### Option 1 (Python not installed)
 1. Windows operating system
-1. Download the [exe file]() and run the file as administrator.
+1. Download the [exe file](https://github.com/JordanLeich/Junk-File-Cleaner/blob/master/cleaner.exe) and run the file as administrator.
 
 ### Option 2 (Python installed)
 1. Windows operating system
