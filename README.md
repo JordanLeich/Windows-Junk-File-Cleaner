@@ -1,12 +1,23 @@
-<a style="text-decoration:none" href="https://github.com/JordanLeich/Junk-File-Cleaner/releases">
-    <img src="https://img.shields.io/github/release/JordanLeich/Junk-File-Cleaner.svg?style=flat-square" alt="Releases" />
-  </a>
-<a style="text-decoration:none" href="https://github.com/JordanLeich/Junk-File-Cleaner/contributors/">
-    <img src="https://img.shields.io/github/contributors/JordanLeich/Junk-File-Cleaner?style=flat-square" alt="Contributors" />
-  </a>
-  <a style="text-decoration:none" href="https://github.com/JordanLeich/Junk-File-Cleaner/stargazers">
-    <img src="https://img.shields.io/github/stars/JordanLeich/Junk-File-Cleaner.svg?style=flat-square" alt="Stars" />
-  </a>
+<h1 align="center">
+    Junk File Cleaner 🗃️
+</h1>
+<hr>
+<p align="center">
+    <img src="https://img.shields.io/github/license/jordanleich/junk-file-cleaner">
+    <img src="https://img.shields.io/github/contributors/jordanleich/junk-file-cleaner">
+    <img src="https://img.shields.io/badge/-Squeaky Clean-brightgreen">    
+    <img src="https://img.shields.io/github/languages/code-size/JordanLeich/junk-file-cleaner">    
+    <img src="https://img.shields.io/github/repo-size/JordanLeich/junk-file-cleaner"> 
+    <img src="https://img.shields.io/tokei/lines/github/JordanLeich/junk-file-cleaner?label=lines%20of%20code">
+    <img src="https://img.shields.io/github/stars/jordanleich/junk-file-cleaner?style=socialhttps://img.shields.io/tokei/lines/github/JordanLeich/junk-file-cleaner?label=lines%20of%20code"> 
+    <img src="https://img.shields.io/github/stars/jordanleich?label=user%20stars&style=social"> 
+    <img src="https://img.shields.io/github/v/release/jordanleich/junk-file-cleaner?include_prereleases"> 
+    <img src="https://img.shields.io/github/last-commit/jordanleich/junk-file-cleaner">    
+</p>
+
+<p align="center">
+    <img src="images/junk.jpg" alt="wallpaper">
+</p>
 
 # Description 📂
 - This is used as a python script that I use for my computer. This script can be set to automatically run every day at whatever time you would like or even when you start your computer and log on. Once the script is ran, it will open a pre-installed cleaning program that is on every Windows PC and then open two other junk folders inside of windows to clean up.
@@ -26,5 +37,3 @@
 ### Option 2 (Python installed)
 1. Windows operating system
 1. Colored (you can install colored by using pip install colored) (only applies to those who are using python and not the .exe file!)
-
-![Junk Folders](images/junk.jpg "Junk Folders")
