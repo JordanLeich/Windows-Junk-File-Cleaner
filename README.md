@@ -26,7 +26,6 @@
 ![Junk Folders](images/demo.gif "Junk Folders")
 
 # Important ⚡
-1. You do not need python installed to be able to use my program! If you choose not to use python or don't have it installed, you can download the [exe file](https://github.com/JordanLeich/Junk-File-Cleaner/blob/master/cleaner.exe) and use that instead!
 1. It is best to use and run this program or script as being an administrator since one to two of the junk folders will almost always contain administror controllered files and folders that needs to be cleaned. Without being an administrator, the script will only partially clean junk files and will eventually hit an administrator error that will end the script short.
 
 # [Requirements](https://github.com/JordanLeich/Junk-File-Cleaner/blob/master/requirements.txt) ❗
@@ -34,6 +33,10 @@
 1. Windows operating system
 1. Download the [exe file](https://github.com/JordanLeich/Junk-File-Cleaner/blob/master/cleaner.exe) and run the file as administrator.
 
-### Option 2 (Python installed)
+### Option 2 (Python not installed)
+1. Windows operating system
+1. Download the [batch file](https://github.com/JordanLeich/Junk-File-Cleaner/blob/master/cleaner.bat) and run the file as administrator.
+
+### Option 3 (Python installed)
 1. Windows operating system
 1. Colored (you can install colored by using pip install colored) (only applies to those who are using python and not the .exe file!)
