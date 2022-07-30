@@ -7,21 +7,17 @@ REM Removing all junk files.
 echo Removing all junk files . . .
 echo.
 
+rd "%temp%" /s /q
+rd "%WINDIR%\Temp" /s /q
+rd "%TMP%" /s /q
+rd "%AppData%\Local\Microsoft\Windows\INetCache\IE" /s /q
+
+del "%WINDIR%\Downloaded Program Files\*" /s /f /q
+
 cd /d %WINDIR%\Prefetch
 for /F "delims=" %%i in ('dir /b') do (rmdir "%%i" /s/q || del "%%i" /s/q)
 
-cd /d %temp%
-for /F "delims=" %%i in ('dir /b') do (rmdir "%%i" /s/q || del "%%i" /s/q)
-
-cd /d %WINDIR%\Temp
-for /F "delims=" %%i in ('dir /b') do (rmdir "%%i" /s/q || del "%%i" /s/q)
-
-cd /d %TMP%
-for /F "delims=" %%i in ('dir /b') do (rmdir "%%i" /s/q || del "%%i" /s/q)
-
-del "%Windows%\Downloaded Program Files\*" /s /f /q
-del "%AppData%\Local\Microsoft\Windows\INetCache\IE\*" /s /f /q
-del "\$Recycle.Bin\%SID%\*" /s /f /q
+for /f "skip=1" %%d in ('wmic logicaldisk get DeviceID ^| findstr /v /r "^$"') do for /f "delims=" %%u in ('dir /a /b %%d\$Recycle.bin 2^>nul') do rd "%%d\$Recycle.bin\%%u" /s /q
 
 REM Finished.
 echo.
