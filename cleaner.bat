@@ -10,7 +10,7 @@ echo.
 rd "%temp%" /s /q
 rd "%WINDIR%\Temp" /s /q
 rd "%TMP%" /s /q
-rd "%AppData%\Local\Microsoft\Windows\INetCache\IE" /s /q
+rd "%userprofile%\AppData\Local\Microsoft\Windows\INetCache\IE" /s /q
 
 del "%WINDIR%\Downloaded Program Files\*" /s /f /q
 
