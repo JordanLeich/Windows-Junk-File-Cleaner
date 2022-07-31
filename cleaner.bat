@@ -7,7 +7,7 @@ echo Running windows built in Disk Cleanup tool . . .
 echo.
 
 REM Running windows built in Disk Cleanup tool.
-START cleanmgr.exe /sagerun:1
+cleanmgr.exe /sagerun:1
 pause
 echo. 
 
